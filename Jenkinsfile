@@ -55,7 +55,6 @@ pipeline {
                 sh "mkdir javancss1 ; cd javancss1 ;pwd"
                 git 'https://github.com/sadhramani/JenkinsAssignment.git'
                 sh "cd javancss-master ; mvn findbugs:findbugs ; pwd"
-                deleteDir()
 
               }
          )
